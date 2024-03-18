@@ -1,0 +1,159 @@
+img {
+    width: 100%;
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    border: solid black;
+    height: 25px;
+    display: flex;
+    justify-content: flex-end;
+    /* flex-direction: row; */
+    align-items: center;
+    z-index: 100;
+}
+
+header nav {
+    display: flex;
+    margin-right: 5%;
+
+}
+
+header nav a:not(:last-child) {
+    /* width: 100%; */
+    margin-right: 10%;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+
+section.intro {
+    display: flex;
+    margin-top: 52px;
+    align-items: center;
+    justify-content: center;
+}
+
+section.intro :first-child {
+    margin-right: 10%;
+    /* background-color: black; */
+}
+
+section.intro div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 181px;
+}
+
+.intro img {
+    max-width: 300px;
+    border-radius: 24px 24px 24px 24px;
+}
+
+.SubTitle {
+    display: flex;
+    justify-content: center;
+    margin-top: 3%;
+    border-bottom: solid;
+    min-width: 50%;
+}
+
+main section.Education {
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+}
+
+main section.Education h1 {
+    display: flex;
+    justify-content: center;
+    margin-top: 3%;
+    border-bottom: solid;
+    min-width: 50%;
+}
+
+.Degree {
+    position: relative;
+    display: block;
+    /* min-width: 310px; */
+    margin-left: 30%;
+    /* right: 13%; */
+    /* background-color: aqua; */
+}
+
+/* .item1{
+    grid-area: thetop;
+}
+
+.item2{
+    grid-area: bot;
+} */
+
+
+.item1 {
+    grid-area: top;
+}
+
+.item2 {
+    grid-area: left;
+}
+
+.item3 {
+    grid-area: right;
+}
+
+
+.grid-container {
+    display: grid;
+    grid-template-areas:
+        'top top'
+        'left right';
+    gap: 10px;
+    /* background-color: #2196F3; */
+    width: 20%;
+    height: 300px;
+    margin-left: 30%;
+
+}
+
+.grid-container>div {
+    background-color: rgba(255, 255, 255, 0.8);
+    /* text-align: center; */
+    /* padding: 20px 0; */
+    /* font-size: 30px; */
+}
+
+.grid-container>div:not(:first-child) {
+    width: 350px;
+}
+
+.grid-container div img {
+    margin-bottom: 3%;
+}
+
+.grid-container div p {
+    margin: 0%;
+    /* inline-size: 350px; */
+    inline-size: 100%;
+    overflow-wrap: break-word;
+}
+
+.image_container {
+    position: relative;
+    text-align: center;
+    color: black;
+}
+
+.image_container h1 {
+    position: absolute;
+    bottom: 1%;
+    left: 5%;
+    /* font-size: 2rem; */
+    font-size: 100%;
+    background-color: rgba(106, 103, 103, 0.788);
+}
