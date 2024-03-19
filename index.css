@@ -1,11 +1,12 @@
 img {
-    width: 100%;
+    max-width: 100%;
 }
 
 header {
     position: fixed;
     width: 100%;
-    border: solid black;
+    /* border: solid black; */
+    background-color: rgba(231, 231, 231, 0.841);
     height: 25px;
     display: flex;
     justify-content: flex-end;
@@ -28,7 +29,11 @@ header nav a:not(:last-child) {
 main {
     display: flex;
     flex-direction: column;
+    width: auto;
+    /* align-items: center; */
+
 }
+
 
 
 section.intro {
@@ -77,9 +82,10 @@ main section.Education h1 {
     min-width: 50%;
 }
 
+
 .Degree {
-    position: relative;
-    display: block;
+    /* position: relative; */
+    display: inline;
     /* min-width: 310px; */
     margin-left: 30%;
     /* right: 13%; */
@@ -114,10 +120,11 @@ main section.Education h1 {
         'top top'
         'left right';
     gap: 10px;
+    padding: 0 20%;
     /* background-color: #2196F3; */
-    width: 20%;
-    height: 300px;
-    margin-left: 30%;
+    /* width: 20%;
+    height: 300px; */
+    /* margin-left: 30%; */
 
 }
 
@@ -129,11 +136,13 @@ main section.Education h1 {
 }
 
 .grid-container>div:not(:first-child) {
-    width: 350px;
+    /* width: 350px; */
+    
 }
 
 .grid-container div img {
     margin-bottom: 3%;
+  
 }
 
 .grid-container div p {
@@ -150,10 +159,17 @@ main section.Education h1 {
 }
 
 .image_container h1 {
-    position: absolute;
+     position: absolute;
     bottom: 1%;
     left: 5%;
-    /* font-size: 2rem; */
-    font-size: 100%;
-    background-color: rgba(106, 103, 103, 0.788);
+     font-size: 2rem; 
+    /* font-size: 100%;*/
+    background-color: rgba(106, 103, 103, 0.788); 
+}
+
+section.MakeContact form{
+    display: flex;
+    flex-direction: column;
+    padding: 0 40%;
+    
 }
